@@ -12,7 +12,7 @@ This project provides a VS Code Dev Container setup for database management usin
 
 1. **Clone the repo**:
    ```bash
-   git clone <repository-url> my-prisma-devcontainer
+   git clone <repository-url>
    cd db-admin
    ```
 
