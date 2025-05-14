@@ -14,7 +14,7 @@
       "group": "build"
     },
     {
-      "label": "🛠 Prisma Studio",
+      "label": "🛠 Prisma: Studio",
       "type": "npm",
       "script": "studio",
       "group": "build"

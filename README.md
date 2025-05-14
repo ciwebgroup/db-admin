@@ -52,6 +52,7 @@ This project provides a VS Code Dev Container setup for database management usin
 
 Press **Ctrl+Shift+B** (or **Cmd+Shift+B**) in the Dev Container and pick:
 
+- **Prisma: studio**  
 - **Prisma: generate**  
 - **Prisma: migrate (dev)**
 - **Docker: build prod image**
