@@ -1,0 +1,30 @@
+{
+  "name": "db-admin",
+  "version": "0.1.0",
+  "scripts": {
+    "prisma": "prisma",
+    "generate": "prisma generate",
+    "studio": "prisma studio",
+    "db:seed": "ts-node prisma/seed.ts",
+    "migrate:init": "prisma migrate dev --name init",
+    "migrate:dev": "prisma migrate dev",
+    "migrate:prod": "docker run --rm -e DATABASE_URL=$DATABASE_URL $REGISTRY/$IMAGE_NAME:latest npx prisma migrate deploy",
+    "build:prod": "docker build -t $REGISTRY/$IMAGE_NAME:latest -f Dockerfile .",
+    "push:prod": "docker push $REGISTRY/$IMAGE_NAME:latest"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.16.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.0",
+    "prisma": "^4.16.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.7.0"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🛠 Prisma: generate",
+      "type": "npm",
+      "script": "generate",
+      "group": "build"
+    },
+    {
+      "label": "� Prisma: migrate (dev)",
+      "type": "npm",
+      "script": "migrate:dev",
+      "group": "build"
+    },
+    {
+      "label": "🛠 Prisma Studio",
+      "type": "npm",
+      "script": "studio",
+      "group": "build"
+    },
+    {
+      "label": "�🐳 Docker: build prod image",
+      "type": "shell",
+      "command": "npm run build:prod",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "🐳 Docker: push prod image",
+      "type": "shell",
+      "command": "npm run push:prod",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "🗄️ Prisma: migrate (prod)",
+      "type": "shell",
+      "command": "npm run migrate:prod",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
